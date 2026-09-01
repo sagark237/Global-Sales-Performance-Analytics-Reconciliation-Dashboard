@@ -1,4 +1,4 @@
-# Sales Performance Scorecard Analysis (Power BI)
+# Global-Sales-Performance-Analytics-Reconciliation-Dashboard (PowerBI)
 
 ## Project Overview
 
