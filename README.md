@@ -195,17 +195,27 @@ Features:
 
 ## Dashboard Screenshots
 
-### Team Performance Dashboard
+## Team Performance Dashboard
 
-![Teamshots/team-performance.png
+Screenshots/team-performance.png
 
-### Regional Manager Dashboard
+---
+
+## Regional Manager Dashboard
 
 Screenshots/regional-manager-dashboard.png
 
-### Product Geography Dashboard
+---
 
-![Product Geography Dashboard](Screenshots/product-# Tools Used
+## Product Geography Dashboard
+
+Screenshots/product-geography-dashboard.png
+
+### Reconcilation Dashboard
+
+Screenshots/reconcilation-dashboard.png
+
+-# Tools Used
 
 - Power BI Desktop
 - Power Query
