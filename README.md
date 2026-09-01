@@ -195,21 +195,17 @@ Features:
 
 ## Dashboard Screenshots
 
-## Team Performance Dashboard
+### Regional Manager Dashboard
 
-Screenshots/team-performance.png
+![Regionals/regional-manager-dashboard.png
 
----
+### Product Geography Dashboard
 
-## Regional Manager Dashboard
+![Product Geography Dashboard](Screenshots/
 
-Screenshots/regional-manager-dashboard.png
+### Reconciliation Dashboard
 
----
-
-## Product Geography Dashboard
-
-Screenshots/product-geography-dashboard.png
+Screenshots/reconciliation-dashboard.png
 
 ### Reconcilation Dashboard
 
