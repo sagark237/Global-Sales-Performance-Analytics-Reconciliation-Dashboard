@@ -1,0 +1,18 @@
+# Power BI
+*.pbix.autorecovery
+
+# Excel temp files
+~$*.xlsx
+
+# Windows
+Thumbs.db
+
+# MacOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
