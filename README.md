@@ -41,7 +41,7 @@ Because Order Numbers were not unique across the dataset, a Composite Key was cr
 `Order Number + Order Date`
 
 This key was used to ensure accurate reconciliation and relationship management between tables.
-
+s
 ---
 
 ## Solution Highlights
