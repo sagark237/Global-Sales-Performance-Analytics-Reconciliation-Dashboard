@@ -1,51 +1,86 @@
-# Global-Sales-Performance-Analytics-Reconciliation-Dashboard (PowerBI)
+# 📊Global-Sales-Performance-Analytics-Reconciliation-Dashboard (PowerBI)
 
-## Project Overview
+## Overview
 
-This project demonstrates an end-to-end Power BI analytics solution built using multi-currency sales transaction data. The objective was to transform raw sales and billing records into actionable business intelligence through data cleansing, modeling, financial reconciliation, performance management, and executive dashboards.
+This project demonstrates an end-to-end Power BI analytics solution that transforms raw multi-currency sales transactions into actionable business intelligence.
 
-The solution enables stakeholders to evaluate sales team performance, monitor target achievement, identify billing discrepancies, and analyze sales trends across products, countries, and regions.
+The solution covers data cleansing, financial reconciliation, sales performance monitoring, target tracking, incentive calculations, regional analysis, and product contribution analysis.
+
+The dashboards were designed to help business stakeholders monitor sales performance, identify trends, evaluate target achievement, and investigate sales-versus-billing variances.
 
 ---
 
-## Business Requirements
+## Business Problem
 
-The project addresses the following business objectives:
+Organizations operating across multiple regions often face challenges in:
 
-- Standardize sales transactions across multiple currencies
-- Clean and normalize inconsistent order dates
-- Reconcile sales transactions against billing records
-- Track Actual vs Target performance for Sales Executives and Regional Managers
-- Calculate incentive payouts based on achievement percentage
-- Identify regional and product-level sales trends
-- Analyze country-level contributions to revenue
-- Provide interactive dashboards for business users
+- Consolidating sales data from different currencies
+- Reconciling sales and billing records
+- Tracking sales team performance against targets
+- Calculating incentives consistently
+- Understanding regional and product-level performance
+- Identifying top-performing sales executives and managers
+
+This dashboard provides a centralized reporting solution to address these challenges.
 
 ---
 
 ## Dataset
 
-Data Sources:
+The project uses the following datasets:
 
 - Sales_Data
 - Bill Details
 - Sales Team Target
 - Reference Data
 
-Special Handling:
+### Special Data Handling
 
-- Order Number was not unique across the dataset.
-- A Composite Key was created using:
+Because Order Numbers were not unique across the dataset, a Composite Key was created using:
 
-Order Number + Order Date
+`Order Number + Order Date`
 
-This unique key was used for reconciliation and relationship management across datasets.
+This key was used to ensure accurate reconciliation and relationship management between tables.
 
 ---
 
-## Data Modeling
+## Solution Highlights
 
-The solution follows a dimensional modeling approach.
+### Data Preparation
+
+- Cleaned inconsistent Order Date formats
+- Standardized multi-currency transactions into USD
+- Built Date Dimension and Year Dimension tables
+- Created Sales Executive and Regional Manager hierarchy
+
+### Performance Scorecard
+
+- Actual Sales
+- Target Sales
+- Achievement %
+- Incentive Calculation
+- Sales Executive Performance Tracking
+- Regional Manager Performance Aggregation
+
+### Financial Reconciliation
+
+- Compared Sales and Billing Amounts
+- Calculated Variances
+- Flagged Discrepancies
+- Built transaction-level reconciliation analysis
+
+### Business Intelligence Analysis
+
+- Monthly Sales Trends
+- Year-over-Year Comparison
+- Regional Contribution Analysis
+- Product Contribution Analysis
+- Country-level Performance Analysis
+- Top Performers Dashboard
+
+---
+
+## Data Model
 
 ### Fact Tables
 
@@ -55,53 +90,17 @@ The solution follows a dimensional modeling approach.
 ### Dimension Tables
 
 - Date Table
-- Sales Executive Dimension
-- Year Dimension
-- Sales Team Mapping
+- Dim Year
+- Dim Sales Executive
+- Sales Team Map
 
-### Relationships
+### Model Design
 
-- Composite Order Key for transaction matching
-- Sales Executive dimension for performance analysis
-- Year dimension for target tracking
-- Date dimension for time intelligence
+The solution follows a dimensional modeling approach to support scalable reporting and maintain accurate filter propagation throughout the model.
 
 ---
 
-## Key Features
-
-### Performance Scorecard
-
-- Actual Sales
-- Target Sales
-- Achievement Percentage
-- Incentive Calculations
-- Sales Executive Performance
-- Regional Manager Performance
-
-### Financial Reconciliation
-
-- Sales vs Billed Amount
-- Variance Analysis
-- Mismatch Identification
-
-### Sales Analytics
-
-- Monthly Sales Trends
-- Regional Contributions
-- Top Performing Sales Executives
-- Product Contribution Analysis
-- Top Countries by Revenue
-
-### Management Insights
-
-- Manager-level Rollups
-- Territory Performance
-- Team Performance Monitoring
-
----
-
-## DAX Measures Implemented
+## Key DAX Measures
 
 ### Actual Sales
 
@@ -148,34 +147,49 @@ Incentive Amount =
 
 ## Dashboard Pages
 
-### Team Performance
+### 1. Team Performance Dashboard
 
 Features:
 
 - Sales Executive Performance Matrix
-- Top Performers by Sales
-- Target vs Actual Analysis
-- Incentive Tracking
+- Target vs Actual Tracking
+- Incentive Analysis
+- Top Performer Ranking
 - Year-wise Performance Comparison
 
-### Regional Manager Dashboard
+---
+
+### 2. Regional Manager Dashboard
 
 Features:
 
-- Manager Scorecards
-- Manager Achievement %
-- Territory Analysis
+- Manager Performance Overview
+- Achievement Percentage
+- Team Rollups
 - Monthly Sales Trends
-- Team Aggregation Metrics
+- Regional Sales Analysis
 
-### Product & Geography Analysis
+---
+
+### 3. Product Geography Dashboard
 
 Features:
 
-- Product Contribution
-- Country-Level Performance
-- Regional Distribution
-- Product Revenue Analysis
+- Country-Level Sales Performance
+- Product Line Contribution
+- Regional Revenue Distribution
+- Product Category Analysis
+
+---
+
+### 4. Financial Reconciliation Dashboard
+
+Features:
+
+- Sales vs Billing Reconciliation
+- Variance Identification
+- Exception Analysis
+- Transaction-Level Review
 
 ---
 
@@ -183,51 +197,46 @@ Features:
 
 ### Team Performance Dashboard
 
-Screenshots/team-performance.png
-
----
+![Teamshots/team-performance.png
 
 ### Regional Manager Dashboard
 
-Screenshots/rm-performance.png
+Screenshots/regional-manager-dashboard.png
 
----
+### Product Geography Dashboard
 
-### Product & Geography Dashboard
+![Product Geography Dashboard](Screenshots/product-# Tools Used
 
-Screenshots/product-geography.png
+- Power BI Desktop
+- Power Query
+- DAX
+- Microsoft Excel
+- Data Modeling
+- KPI Development
 
 ---
 
 ## Skills Demonstrated
 
-- Power BI
-- DAX
-- Power Query
 - Data Modeling
-- Star Schema Design
-- KPI Development
+- DAX Development
+- Power Query Transformations
 - Dashboard Design
-- Data Visualization
-- Sales Analytics
-- Financial Reconciliation
 - Business Intelligence
-
----
-
-## Key Learnings
-
-- Designing a dimensional data model
-- Building reusable DAX measures
-- Managing many-to-many relationship challenges
-- Creating performance scorecards
-- Implementing time intelligence calculations
-- Building executive-level dashboards
+- Financial Reconciliation
+- Sales Analytics
+- KPI Reporting
+- Performance Management
 
 ---
 
 ## Author
 
-Shiv Sagar
+**Shiv Sagar**
 
 Data Analyst | Power BI Developer
+
+LinkedIn: www.linkedin.com/in/shiv-sagar7
+
+---
+``
